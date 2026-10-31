@@ -26,7 +26,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pages',
     'accounts',
     
 ]
@@ -120,6 +119,6 @@ MAILERS = {
     },
 }
 
-LOGIN_REDIRECT_URL = 'pages:home'
-LOGIN_URL = 'accounts:login'
-LOGOUT_REDIRECT_URL = 'pages:home'
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
