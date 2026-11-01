@@ -8,6 +8,8 @@
   {% csrf_token %}
   <button type="submit">Log Out</button>
  </form>
+  <li><a href="{% url 'article-new' %}"
+class="nav-link px-2 link-dark">+ New</a></li>
  {% else %}
  <p>You are not logged in</p>
  <a href="{%	url	'login'	%}">Log In</a> |
